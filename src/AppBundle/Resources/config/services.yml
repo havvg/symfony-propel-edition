@@ -1,0 +1,6 @@
+parameters:
+
+services:
+    app.settings:
+        class: AppBundle\Services\PropelSettings
+        arguments: []
