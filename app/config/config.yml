@@ -35,7 +35,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
-
+    globals:
+      settings: @app.settings
+      
 # Propel Configuration
 propel:
     logging: "%kernel.debug%"
