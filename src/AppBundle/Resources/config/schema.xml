@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="default" namespace="AppBundle\Propel" defaultIdMethod="native">
+    <table name="settings" phpName="Settings">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="key" type="varchar" size="255" />
+        <column name="value" type="varchar" size="255" />
+		<vendor type="mysql">
+			<parameter name="Engine" value="InnoDB"/>
+			<parameter name="Charset" value="utf8"/>
+		</vendor>
+    </table>
+</database>
